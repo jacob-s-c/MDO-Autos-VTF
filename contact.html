@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | MDO Autos</title>
+<meta name="description" content="Contact MDO Autos to discuss a vehicle test-fit inspection. Submit the part, vehicle platform, and inspection type and we will confirm scope and lead time.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316191C'/%3E%3Cpath d='M7 23V9h3l6 9 6-9h3v14h-3v-8l-4.5 7h-3L10 15v8z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/nav.js" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="wordmark" href="index.html">
+      <strong>MDO Autos</strong>
+      <span>Vehicle test-fit inspection</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="facility.html">Facility</a></li>
+        <li><a href="contact.html" class="is-current" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h1>Contact</h1>
+        <p class="lede">Tell us the part and the vehicle platform. We will confirm which inspection applies, what it will cost, and the lead time to source a donor vehicle before any work is scheduled.</p>
+      </div>
+
+      <div class="contact-layout">
+
+        <div>
+          <dl class="contact-list">
+            <dt>Telephone</dt>
+            <dd><span class="tbd">[PHONE NUMBER]</span></dd>
+
+            <dt>Email</dt>
+            <dd><span class="tbd">[EMAIL ADDRESS]</span></dd>
+
+            <dt>Address</dt>
+            <dd>
+              <span class="tbd">[STREET ADDRESS]</span><br>
+              <span class="tbd">[CITY, STATE, POSTAL CODE]</span>
+            </dd>
+
+            <dt>Hours</dt>
+            <dd><span class="tbd">[BUSINESS HOURS]</span></dd>
+
+            <dt>Enquiry handling</dt>
+            <dd>Inspection enquiries are answered by a technician, not a sales desk. Include the part number and platform if you have them and the first reply will be substantive.</dd>
+          </dl>
+        </div>
+
+        <div>
+          <!-- =====================================================================
+               PRE-LAUNCH: the form action below is a PLACEHOLDER and will not send.
+               Create a form at https://formspree.io, then replace the entire action
+               URL with the one Formspree issues, e.g.
+                   action="https://formspree.io/f/mabcdefg"
+               Remove the visible .note block below once the real endpoint is in.
+               ===================================================================== -->
+
+          <div class="note">
+            <strong>Pre-launch</strong><br>
+            This form is not connected yet. The submit endpoint is a placeholder and submissions will fail until a real Formspree form ID is set in the <code>action</code> attribute. Remove this notice at the same time.
+          </div>
+
+          <form action="https://formspree.io/f/[FORMSPREE_FORM_ID]" method="POST">
+
+            <!-- Subject line on the notification email Formspree sends -->
+            <input type="hidden" name="_subject" value="Inspection enquiry from mdoautos.com">
+
+            <!-- Honeypot: bots fill this, humans never see it -->
+            <div class="hp" aria-hidden="true">
+              <label for="company-url">Leave this field empty</label>
+              <input type="text" id="company-url" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form-grid">
+
+              <div class="field">
+                <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+
+              <div class="field">
+                <label for="company">Company <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="company" name="company" autocomplete="organization" required>
+              </div>
+
+              <div class="field">
+                <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+
+              <div class="field field-full">
+                <label for="platform">Part and vehicle platform <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="platform" name="platform" required aria-describedby="platform-hint">
+                <span class="hint" id="platform-hint">Part number if known, plus make, model, and year range</span>
+              </div>
+
+              <div class="field field-full">
+                <label for="inspection-type">Inspection type <span class="req" aria-hidden="true">*</span></label>
+                <select id="inspection-type" name="inspection_type" required>
+                  <option value="">Select an inspection type</option>
+                  <option value="Certification VTF">Certification VTF</option>
+                  <option value="Complaint VTF">Complaint VTF</option>
+                  <option value="Marketplace Monitoring VTF">Marketplace Monitoring VTF</option>
+                  <option value="Dimensional Inspection VTF">Dimensional Inspection VTF</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="field field-full">
+                <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" required aria-describedby="message-hint"></textarea>
+                <span class="hint" id="message-hint">What prompted the enquiry, and what you need the result to answer</span>
+              </div>
+
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Send enquiry</button>
+            </div>
+
+            <p class="hint" style="margin-top:16px">Fields marked <span class="req">*</span> are required.</p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <strong>MDO Autos</strong>
+        <p class="footer-blurb">Independent test-fit inspection for aftermarket and OEM-replacement vehicle parts.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="facility.html">Facility</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Inspection types</h4>
+        <ul>
+          <li><a href="services.html#certification">Certification VTF</a></li>
+          <li><a href="services.html#complaint">Complaint VTF</a></li>
+          <li><a href="services.html#marketplace-monitoring">Marketplace Monitoring VTF</a></li>
+          <li><a href="services.html#dimensional-inspection">Dimensional Inspection VTF</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2026 MDO Autos</span>
+      <span>Independent third-party inspection</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

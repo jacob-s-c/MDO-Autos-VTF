@@ -1,0 +1,16 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Secrets — never commit tokens, keys, or env files
+.env
+.env.*
+*.pem
+*.key
+secrets.*
