@@ -42,7 +42,7 @@
     <div class="wrap">
       <div class="hero-inner">
         <div>
-          <h1>Independent test-fit inspection for replacement vehicle parts.</h1>
+          <h1><em>Independent</em> test-fit inspection for replacement vehicle parts.</h1>
           <p class="lede">MDO Autos installs a candidate part alongside a genuine OEM part on the same undamaged vehicle, measures the difference, and documents it. Manufacturers and suppliers use our reports to certify fit, resolve field complaints, and monitor production quality over time.</p>
           <div class="hero-actions">
             <a class="btn" href="contact.html">Request an inspection</a>
@@ -51,45 +51,55 @@
         </div>
 
         <figure class="hero-figure">
-          <svg viewBox="0 0 560 292" role="img" aria-labelledby="fig-title fig-desc">
-            <title id="fig-title">Gap and flush measurement diagram</title>
-            <desc id="fig-desc">Cross-section of two adjacent body panels. The horizontal distance between their facing edges is the gap; the vertical difference between their outer surfaces is the flush deviation.</desc>
+          <svg viewBox="0 0 640 300" role="img" aria-labelledby="fig-title fig-desc">
+            <title id="fig-title">Uniform versus tapered panel gap</title>
+            <desc id="fig-desc">Two plan views of a part fitted against a fixed vehicle body edge. On the left, the genuine OEM part holds a uniform 3.5 millimetre gap along its full length. On the right, the candidate part produces a gap that opens from 3.4 millimetres at the top to 6.2 millimetres at the bottom, a taper of 2.8 millimetres across the edge.</desc>
             <defs>
-              <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
-                <line x1="0" y1="0" x2="0" y2="8" stroke="#C6CCD1" stroke-width="1.1"></line>
+              <pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="0" x2="0" y2="7" stroke="#C6CCD1" stroke-width="1.1"></line>
               </pattern>
-              <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M0,0 L10,5 L0,10 z" fill="#B32418"></path>
-              </marker>
             </defs>
 
-            <!-- Panel A: OEM reference -->
-            <rect x="30" y="150" width="202" height="52" fill="url(#hatch)" stroke="#16191C" stroke-width="1.6"></rect>
-            <!-- Panel B: candidate part, sitting proud of the reference surface -->
-            <rect x="272" y="132" width="188" height="52" fill="url(#hatch)" stroke="#16191C" stroke-width="1.6"></rect>
+            <!-- ============ VIEW A: OEM reference, uniform gap ============ -->
+            <text x="24" y="26" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#454C53">Genuine OEM part</text>
 
-            <!-- Datum extended from the OEM surface -->
-            <line x1="232" y1="150" x2="524" y2="150" stroke="#A8B1B8" stroke-width="1" stroke-dasharray="7 5"></line>
-            <line x1="460" y1="132" x2="524" y2="132" stroke="#A8B1B8" stroke-width="1" stroke-dasharray="7 5"></line>
+            <rect x="24" y="76" width="108" height="138" fill="url(#hatch)" stroke="#16191C" stroke-width="1.6"></rect>
+            <rect x="152" y="76" width="132" height="138" fill="#FFFFFF" stroke="#16191C" stroke-width="1.8"></rect>
 
-            <!-- Flush deviation -->
-            <line x1="504" y1="132" x2="504" y2="150" stroke="#B32418" stroke-width="1.4" marker-start="url(#ah)" marker-end="url(#ah)"></line>
-            <text x="504" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#B32418">FLUSH</text>
+            <line x1="132" y1="60" x2="132" y2="230" stroke="#A8B1B8" stroke-width="1" stroke-dasharray="4 4"></line>
+            <line x1="152" y1="60" x2="152" y2="230" stroke="#A8B1B8" stroke-width="1" stroke-dasharray="4 4"></line>
 
-            <!-- Gap between facing edges -->
-            <line x1="232" y1="202" x2="232" y2="246" stroke="#A8B1B8" stroke-width="1"></line>
-            <line x1="272" y1="184" x2="272" y2="246" stroke="#A8B1B8" stroke-width="1"></line>
-            <line x1="232" y1="238" x2="272" y2="238" stroke="#B32418" stroke-width="1.4" marker-start="url(#ah)" marker-end="url(#ah)"></line>
-            <text x="252" y="266" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#B32418">GAP</text>
+            <text x="142" y="52" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#17408B">3.5</text>
+            <text x="142" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#17408B">3.5</text>
 
-            <!-- Part identification -->
-            <text x="30" y="226" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#454C53">OEM reference</text>
-            <text x="460" y="208" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#454C53">Candidate part</text>
+            <line x1="24" y1="272" x2="284" y2="272" stroke="#17408B" stroke-width="2"></line>
+            <text x="24" y="292" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#17408B">Uniform gap</text>
+
+            <!-- ============ VIEW B: candidate part, tapered gap ============ -->
+            <text x="356" y="26" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#454C53">Candidate part</text>
+
+            <rect x="356" y="76" width="108" height="138" fill="url(#hatch)" stroke="#16191C" stroke-width="1.6"></rect>
+            <polygon points="484,76 616,76 616,214 506,214" fill="#FFFFFF" stroke="#16191C" stroke-width="1.8"></polygon>
+
+            <line x1="464" y1="60" x2="464" y2="230" stroke="#A8B1B8" stroke-width="1" stroke-dasharray="4 4"></line>
+            <line x1="484" y1="60" x2="484" y2="72" stroke="#B32418" stroke-width="1"></line>
+            <line x1="506" y1="218" x2="506" y2="230" stroke="#B32418" stroke-width="1"></line>
+
+            <text x="474" y="52" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#B32418">3.4</text>
+            <text x="485" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#B32418">6.2</text>
+
+            <line x1="356" y1="272" x2="616" y2="272" stroke="#B32418" stroke-width="2"></line>
+            <text x="356" y="292" font-family="IBM Plex Mono, monospace" font-size="12.5" fill="#B32418">Gap opens 2.8 across the edge</text>
           </svg>
-          <figcaption>Two of the five dimensions recorded on every inspection. The candidate part is measured against the OEM part on the same vehicle position, under identical conditions.</figcaption>
+          <figcaption>Illustrative. Gap is one of five dimensions recorded on every inspection. A tapered gap like the one on the right passes a drawing check and still fails on the vehicle, which is why we measure against the OEM part rather than the tolerance alone.</figcaption>
         </figure>
       </div>
 
+    </div>
+  </section>
+
+  <div class="band-dark">
+    <div class="wrap">
       <dl class="hero-meta">
         <div>
           <dt>Scope</dt>
@@ -97,7 +107,7 @@
         </div>
         <div>
           <dt>Method</dt>
-          <dd>Side-by-side comparison against a genuine OEM part</dd>
+          <dd>Side-by-side against a genuine OEM part</dd>
         </div>
         <div>
           <dt>Output</dt>
@@ -108,10 +118,8 @@
           <dd>Independent third party, no parts sold</dd>
         </div>
       </dl>
-
-      <div class="tickrule" aria-hidden="true"></div>
     </div>
-  </section>
+  </div>
 
   <section class="section">
     <div class="wrap">
@@ -161,7 +169,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section--surface">
     <div class="wrap">
       <div class="section-head">
         <span class="num">02</span>
